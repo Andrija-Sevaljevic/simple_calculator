@@ -1,6 +1,27 @@
 """This module contains the calculator functions for the formulas square, tri, lazy caterer, and magic squares"""
 
 
+def absolute(n):
+    """Calculates the absolute value"""
+    return abs(n)
+     
+
+
+def factorial(n):
+    """Calculates the factorial"""
+    if n < 0:
+        return None
+    sum = 1
+    for i in range (2,n+1):
+        sum *= i
+    return sum
+
+
+def cubeNums(n):
+    """Calculates the cube"""
+    return n**3
+
+
 def squareNums(n):
     """Calculates the square"""
     return n**2
